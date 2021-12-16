@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mayTinhDonGian</title>
+</head>
+<!--<body>-->
+<!--<form>-->
+<!--    <table border="1">-->
+<!--        <tr>-->
+<!--            <td colspan="4">-->
+<!--                <p id="thep">test</p>-->
+<!--                <input type="text" id="bangnhap" value="0">-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <input type="button" value="1" id="mot" onclick="somot()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="2" id="hai" onclick="sohai()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="3" id="3" onclick="soba()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="+" id="cong" onclick="daucong()">-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        =-->
+<!--        <td>-->
+<!--            <input type="button" value="4" id="4" onclick="sobon()">-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <input type="button" value="5" id="5" onclick="sonam()">-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <input type="button" value="6" id="6" onclick="sosau()">-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <input type="button" value="-" id="chu" onclick="chu()">-->
+<!--        </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <input type="button" value="7" id="7" onclick="sobay()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="8" id="8" onclick="sotam()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="9" id="9" onclick="sochin()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="X" id="X" onclick="X()">-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <input type="button" value="C" id="C" onclick="C()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="0" id="0" onclick="khong()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="=" id="Daubang" onclick="daubang()">-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <input type="button" value="/" id="chia" onclick="chia()">-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</form>-->
+
+<!--</body>-->
+<!--<script>-->
+
+<!--    function somot() {-->
+<!--        let so1 = "1"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function sohai() {-->
+<!--        let so1 = "2"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        Hai = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = Hai-->
+
+<!--    }-->
+
+<!--    function soba() {-->
+<!--        let so1 = "3"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        Ba = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = Ba-->
+
+<!--    }-->
+
+<!--    function sobon() {-->
+<!--        let so1 = "4"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function sonam() {-->
+<!--        let so1 = "5"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function sosau() {-->
+<!--        let so1 = "6"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function sobay() {-->
+<!--        let so1 = "7"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function sotam() {-->
+<!--        let so1 = "8"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function sochin() {-->
+<!--        let so1 = "9"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function khong() {-->
+<!--        let so1 = "0"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + so1-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+<!--    }-->
+
+<!--    function daucong() {-->
+<!--        let mot = "+"-->
+<!--        let Mot = document.getElementById("bangnhap").value-->
+<!--        MOT = Mot + mot-->
+<!--        document.getElementById("bangnhap").value = MOT-->
+
+
+<!--    }-->
+
+<!--    function daubang() {-->
+<!--        let ketqua = eval(document.getElementById("bangnhap").value)-->
+<!--        document.getElementById("bangnhap").value = ketqua-->
+<!--    }-->
+
+<!--</script>-->
+<body>
+<form>
+    <table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="bangnhap">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" id="mot" onclick="passParameters(1)">
+            </td>
+            <td>
+                <input type="button" value="2" id="hai" onclick="passParameters(2)">
+            </td>
+            <td>
+                <input type="button" value="3" id="3" onclick="passParameters(3)">
+            </td>
+            <td>
+                <input type="button" value="+" id="cong" onclick="passParameters('+')">
+            </td>
+        </tr>
+        <td>
+            <input type="button" value="4" id="4" onclick="passParameters(4)">
+        </td>
+        <td>
+            <input type="button" value="5" id="5" onclick="passParameters(5)">
+        </td>
+        <td>
+            <input type="button" value="6" id="6" onclick="passParameters(6)">
+        </td>
+        <td>
+            <input type="button" value="-" id="chu" onclick="passParameters('-')">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" id="7" onclick="passParameters(7)">
+            </td>
+            <td>
+                <input type="button" value="8" id="8" onclick="passParameters(8)">
+            </td>
+            <td>
+                <input type="button" value="9" id="9" onclick="passParameters(9)">
+            </td>
+            <td>
+                <input type="button" value="X" id="X" onclick="passParameters('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="C" id="C" onclick="clearconsole()">
+            </td>
+            <td>
+                <input type="button" value="0" id="0" onclick="passParameters(0)">
+            </td>
+            <td>
+                <input type="button" value="=" id="Daubang" onclick="calculate()">
+            </td>
+            <td>
+                <input type="button" value="/" id="chia" onclick="passParameters('/')">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+<script>
+    function passParameters(x) {
+
+        let number = document.getElementById("bangnhap").value;
+        number += x ;
+        document.getElementById("bangnhap").value = number;
+    }
+    function clearconsole() {
+        let console = document.getElementById("bangnhap");
+        console.value = "";
+    }
+        function calculate() {
+            let console = document.getElementById("bangnhap").value;
+            let result = eval(console);
+            document.getElementById("bangnhap").value = result;
+        }
+
+    
+</script>
+</html>
